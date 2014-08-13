@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SI Lookback</title>
+	<!-- Custom CSS -->
+	<link href="resources/css/styles.css" rel="stylesheet" type="text/css" />
+	
+	<!--[if lt IE 9]>
+        <script type="text/javascript" src="resources/js/json3.min.js"></script>
+    <![endif]-->
+	
+	<!-- jQuery -->
+	<script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
+	
+	<!-- jQuery Plugin -->
+	<script type="text/javascript" src="resources/js/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<link href="resources/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Server Date -->
+	<script type="text/javascript" src="http://subscription-assets.timeinc.com/prod/assets/appstorefronts-jq/serverTime.js"></script>
+	
+	<!-- Custom JS -->
+    <script type="text/javascript">
+    	// this is for opening pop-up windows
+		function openPopup( url, name, widgets, openerUrl )
+		{
+		    var host = location.hostname;
+		    try {
+		        window.top.name = "opener";
+		    } catch (e) {}
+		    var popupWin = window.open( url, name, widgets );
+		    if(popupWin) {cnnHasOpenPopup = 1;}
+		    if ( popupWin && popupWin.opener ) {
+		        if ( openerUrl )
+		        {
+		            popupWin.opener.location = openerUrl;
+		        }
+		    }
+		    if ( popupWin) {
+		        popupWin.focus();
+		    }
+		}
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="resources/js/scripts.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="bnr">
+			<img src="resources/images/logo.png" alt="Look Back" class="bnr-logo" />
+			<div class="bnr-copy">
+				Welcome to the LookBack collection, a subscriber-only feature from SPORTS ILLUSTRATED where you can read hand-picked SI issues from as far back as 1954!
+				<a href="#" id="bookmarkme" rel="sidebar" title="Sport Illustrated: LookBack Collection">Bookmark this page</a>
+				and remember to check back every month for the newest theme!
+			</div>
+		</div>
+		<div class="content">
+			<div class="hdr-box">
+				<div id="nav">
+					<img src="resources/images/arrow-left.png" alt="Arrow left" class="arrow-left" />
+					<img src="resources/images/arrow-right.png" alt="Arrow right" class="arrow-right" />
+				</div>
+
+				<ul id="categories" class="bxslider1"></ul>
+			</div>
+	
+			<ul id="issues" class="bxslider2"></ul>
+			
+			<div class="clear">
+				<!--CLEAR-->
+			</div>
+			<div class="issue-copy"> <strong><em>Want to own a piece of sports history?</em></strong> 
+				Go to
+				<a href="http://www.sicovers.com">sicovers.com</a>
+				now to buy your favorite classic SI covers.
+			</div>
+		</div>
+
+		<!-- Next Issue Special -->
+		<ul id="checkText" class="bxslider3"></ul>
+
+		<div class="footer">
+			<div class="footer-logo">
+				<img src="resources/images/logo-si.gif" alt="SI.com" />
+			</div>
+			<ul>
+				<li>
+					<a href="https://subscription.si.com/storefront/subscribe-to-sports-illustrated/site/si-dnr56for390813.html?xid=sirosfooter&link=1003862">Give the gift of SI</a>
+				</li>
+				<li>
+					<a href="https://subscription.si.com/storefront/site/si-everywhere/login.html?CGI-App-Id=com.time.sie.web&CGI-Site=si-everywhere&storeCode=SUBS">Digital edition</a>
+				</li>
+				<li>
+					<a href="https://secure.customersvc.com/servlet/Show?WESPAGE=am/home.jsp&MSRSMAG=SI">SI customer service</a>
+				</li>
+				<li>
+					<a href="http://sportsillustrated.cnn.com/multimedia/photo_gallery/?eref=sinav&sct=hp_nv_a">Pictures of the day</a>
+				</li>
+				<li>
+					<a href="http://www.gettyimages.com/Editorial/Frontdoor/SportsIllustrated">SI Pictures Sales</a>
+				</li>
+				<li>
+					<a href="http://sportsillustrated.cnn.com/2008/magazine/si.books/">SI Books</a>
+				</li>
+			</ul>
+			<div class="clear">
+				<!--CLEAR-->
+			</div>
+		</div>
+		<div class="legal">
+			Copyright &copy; 2013 Time Inc. All Rights Reserved.
+			<a href="https://subscription.timeinc.com/storefront/privacy/si/privacy_terms_service.html">Terms</a>
+			under which this service is provided to you. Read our
+			<a href="https://subscription.timeinc.com/storefront/privacy/si/generic_privacy_new.html?dnp-source=E">privacy guidelines.</a>
+			<a href="https://subscription.timeinc.com/storefront/privacy/si/generic_privacy_new.html?dnp-source=E#california">Your California Privacy Rights.</a>
+		</div>
+	</div>
+	
+	<!-- SiteCatalyst -->
+	<div style="display:none;">
+		<script type="text/javascript" src="../../../../../default/template-resources/js/omniture/accounts.js"></script>
+		<script type="text/javascript" >
+		   document.write(unescape('%3Cscript type="text/javascript" src="../../../../../default/template-resources/js/omniture/config/'+aOmn['SI']+'.js"%3E%3C/script%3E'));
+		</script>
+		<script type="text/javascript" >
+			s.pageName = "TCM_SI : " + "SI Lookback Collection";
+			s.server=window.location.host;
+			s.channel=s.prop16="Consumer Marketing";
+			s.pageType="";
+			s.prop17=location.protocol + "//" + location.host + location.pathname;
+			var s_code=s.t();
+			if(s_code){document.write(s_code);}
+		</script>
+	</div>
+	<!-- End SiteCatalyst -->
+	
+</body>
+</html>
